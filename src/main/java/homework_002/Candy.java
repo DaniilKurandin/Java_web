@@ -49,4 +49,9 @@ public class Candy {
     public void setIngredients3(String ingredients3) {
         this.ingredients3 = ingredients3;
     }
+
+    @Override
+    public String toString() {
+        return "[" +ingredients1 +", " + ingredients2 + ", " + ingredients3 + "]";
+    }
 }

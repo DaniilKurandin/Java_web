@@ -3,6 +3,7 @@ package homework_002;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 import java.io.File;
 
 public class Main {
@@ -20,6 +21,10 @@ public class Main {
             Marshaller marshaller = jaxbContext.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
             marshaller.marshal(factory, file);
+
+            Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
+            factory = (Factory) unmarshaller.unmarshal(file);
+            System.out.println(factory);
 
         } catch (JAXBException e) {
             e.printStackTrace();
