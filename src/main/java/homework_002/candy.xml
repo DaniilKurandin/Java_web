@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<factory>
+    <candy>
+        <ingredients_1>Chocolate</ingredients_1>
+        <ingredients_2>Nougat</ingredients_2>
+        <ingredients_3>Caramel</ingredients_3>
+    </candy>
+    <candy>
+        <ingredients_1>Milk_chocolate</ingredients_1>
+        <ingredients_2>Peanut</ingredients_2>
+        <ingredients_3>Nougat</ingredients_3>
+    </candy>
+    <candy>
+        <ingredients_1>Chocolate</ingredients_1>
+        <ingredients_2>Marmalade</ingredients_2>
+    </candy>
+</factory>
